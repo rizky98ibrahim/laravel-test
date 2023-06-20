@@ -11,23 +11,23 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('data_transaksi', function (Blueprint $table) {
+        Schema::create('table_transaksi', function (Blueprint $table) {
             $table->increments('id');
             $table->string('kode_transaksi')->unique();
-            $table->bigInteger('nim')->unsigned();
+            $table->unsignedBigInteger('nim');
             $table->string('nama');
             $table->string('kode_jurusan');
             $table->string('jurusan');
+            $table->foreign('nim')->references('nim')->on('table_mahasiswa');
+            $table->foreign('kode_jurusan')->references('kode_jurusan')->on('table_jurusan');
             $table->timestamps();
         });
     }
-
-
     /**
      * Reverse the migrations.
      */
     public function down(): void
     {
-        Schema::dropIfExists('data_transaksi');
+        Schema::dropIfExists('table_transaksi');
     }
 };

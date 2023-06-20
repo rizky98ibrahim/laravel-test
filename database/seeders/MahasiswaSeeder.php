@@ -15,7 +15,7 @@ class MahasiswaSeeder extends Seeder
 
         $faker = Faker::create('id_ID');
 
-        for ($i = 1; $i <= 200; $i++) {
+        for ($i = 1; $i <= 50; $i++) {
             // insert data ke table pegawai menggunakan Faker
             \DB::table('table_mahasiswa')->insert([
                 'nama' => $faker->name,
