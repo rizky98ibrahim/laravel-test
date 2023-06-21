@@ -34,11 +34,11 @@ class MahasiswaExport implements FromCollection, WithHeadings, WithMapping, With
             'No',
             'Nama',
             'NIM',
+            'Jurusan',
             'Jenis Kelamin',
             'Tempat Lahir',
             'Tanggal Lahir',
             'Alamat',
-            'Jurusan'
         ];
     }
 
@@ -50,11 +50,11 @@ class MahasiswaExport implements FromCollection, WithHeadings, WithMapping, With
             $row->id,
             $row->nama,
             $row->nim,
+            $row->jurusan->jurusan,
             $row->jenis_kelamin ? 'Laki Laki' : 'Perempuan',
             $row->tempat_lahir,
             $tanggalLahir,
             $row->alamat,
-            $row->jurusan->jurusan
         ];
     }
     public function styles(Worksheet $sheet)

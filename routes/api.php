@@ -21,6 +21,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/dashboard', [DashboardController::class, 'index']);
-
-Route::get('/export-excel', [TransaksiController::class, 'exportExcel']);
-Route::get('/export-pdf', [TransaksiController::class, 'exportPdf']);
+Route::get('/transaksi', [TransaksiController::class, 'index']);
+Route::get('/transaksi/export-excel', [TransaksiController::class, 'exportExcel']);
+Route::get('/transaksi/export-pdf', [TransaksiController::class, 'exportPdf']);

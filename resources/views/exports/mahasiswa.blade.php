@@ -44,11 +44,11 @@
                 <th>No.</th>
                 <th>Nama</th>
                 <th>NIM</th>
+                <th>Jurusan</th>
                 <th>Jenis Kelamin</th>
                 <th>Tempat Lahir</th>
                 <th>Tanggal Lahir</th>
                 <th>Alamat</th>
-                <th>Jurusan</th>
             </tr>
         </thead>
         <tbody>
@@ -57,11 +57,11 @@
                 <td>{{ $index + 1 }}</td>
                 <td>{{ $data->nama }}</td>
                 <td>{{ $data->nim }}</td>
+                <td>{{ $data->jurusan->jurusan }}</td>
                 <td>{{ $data->jenis_kelamin ? 'Laki Laki' : 'Perempuan' }}</td>
                 <td>{{ $data->tempat_lahir }}</td>
                 <td>{{ date('d-M-Y', strtotime($data->tanggal_lahir)) }}</td>
                 <td>{{ $data->alamat }}</td>
-                <td>{{ $data->jurusan->jurusan }}</td>
             </tr>
             @endforeach
         </tbody>

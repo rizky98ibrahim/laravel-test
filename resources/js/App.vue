@@ -5,8 +5,12 @@
 </template>
 
 <script>
+import Layout from "./Layout/Layout.vue";
+
 export default {
     name: "App",
-    // Component options
+    components: {
+        Layout,
+    },
 };
 </script>
