@@ -15,7 +15,7 @@ To install and set up the project, follow these steps:
 1. Clone this repository.
 
 ```bash
-git clone <repository_url>
+git clone https://github.com/rizky98ibrahim/test-radian-edu.git
 ```
 
 2. Install dependencies using Composer and NPM.
