@@ -1,29 +1,78 @@
-# How to use This Project
+# Technical Test - Radian Edu Solutions
 
-## Introduction
+## About the Project
 
-This is a project for a test of a company.
+This project is a technical test for the position of Full Stack Developer at Radian Edu Solutions. It is built using the Laravel framework for the backend and Vue.js with Tailwind CSS for the frontend.
+
+## Task List
+- [x] Create a chart to calculate the total number of men and women based on college majors.
+- [x] Create a table of registered students with complete data and export it to Excel and PDF.
 
 ## Installation
 
-1. Download this repository
+To install and set up the project, follow these steps:
 
-2. Install dependencies: `composer install` and `npm install`
+1. Clone this repository.
 
-3. Create a copy of your .env file: `cp .env.example .env`
+```bash
+git clone <repository_url>
+```
 
-4. Generate an app encryption key: `php artisan key:generate`
+2. Install dependencies using Composer and NPM.
 
-5. Create an empty database for our application
+```bash
+composer install
+npm install
+```
 
-6. In the .env file, add database information to allow Laravel to connect to the database
+3. Create a copy of the `.env` file.
 
-7. Migrate the database: `php artisan migrate`
+```bash
+cp .env.example .env
+```
 
-8. Seed the database: `php artisan db:seed`
+4. Generate an application encryption key.
 
-9. Run `npm run dev`
+```bash
+php artisan key:generate
+```
 
-10. Start the server: `php artisan serve`
+5. Create an empty database for the application.
 
-11. Visit `localhost:8000` in your browser
+6. Open the `.env` file and add the database information to allow Laravel to connect to the database.
+
+7. Migrate the database.
+
+```bash
+php artisan migrate
+```
+
+8. Seed the database.
+
+```bash
+php artisan db:seed
+```
+
+9. Compile the assets.
+
+```bash
+npm run dev
+```
+
+10. Start the server.
+
+```bash
+php artisan serve
+```
+
+11. Visit `localhost:8000` in your browser.
+
+## Contact
+
+If you have any further questions, feel free to contact me through:
+
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6287808740020)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rizky98ibrahim@gmail.com)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/rizky98ibrahim)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rizky98ibrahim/)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/rizky98ibrahim)
